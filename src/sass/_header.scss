@@ -1,0 +1,34 @@
+header.site-header {
+    .container {
+        max-width: 1850px;
+    }
+    .site-branding {
+        padding-left: 38px;
+        
+        a {
+            display: block;
+            font-size: 2.625em;
+        }
+    }
+    .main-menu {
+        ul {
+            li {
+                margin: 0 35px;
+                
+                a {
+                    font-family: 'GilroySemiBold';
+                    font-size: 1.813em;
+                    letter-spacing: 1.5px;
+                }
+            }
+        }
+    }
+    .contact-info {
+        margin-left: 60px;
+
+        a {
+            font-size: 1.688em;
+            letter-spacing: 1.5px;
+        }
+    }
+}

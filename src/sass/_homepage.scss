@@ -1,0 +1,368 @@
+.home {
+    section.hero {
+        background: rgb(2,0,36);
+        background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(83,166,246,1) 0%, rgba(149,18,215,1) 80%);
+        padding-top: 240px;
+        padding-bottom: 100px;
+
+        .hero-text {
+            padding-bottom: 100px;
+
+            .inner-wrapper {
+                max-width: 800px;
+                margin-left: auto;
+
+                h1 {
+                    margin-bottom: 20px;
+                }
+                .description {
+                    margin-bottom: 70px;
+                }
+                #get_money_now {
+                    font-size: 30px;
+                    max-width: 365px;
+                    width: 100%;
+                    padding: 27px;
+                }
+            }
+        }
+        form {
+            input:not([type=submit]), textarea {
+                color: $grey;
+                box-shadow: 0px 52px 54px 0px rgba(101,14,140,0.28);
+            }
+        }
+        .glitters1 {
+            right: 0;
+            top: 43px;
+        }
+
+        #scroll-down {
+            position: absolute;
+            display: block;
+            max-width: 90px;
+            width: 5vw;
+            left: 22vw;
+            bottom: 5vw;
+            z-index: 20;
+
+            &:before {
+                content: 'Scroll down';
+                color: #fff;
+                font-size: 25px;
+                position: absolute;
+                width: 200px;
+                text-align: center;
+                left: -45px;
+                right: 0;
+                top: -65px;
+                letter-spacing: 6px;
+            }
+        }
+        .glitters2 {
+            bottom: -17px;
+            left: 50%;
+        }
+
+    }
+
+    section.about-us {
+        padding-top: 100px;
+
+        .grey-blob-aboutus {
+            top: 20vw;
+            z-index: 1;
+        }
+
+        .introductory {
+            margin-bottom: 40px;
+
+            .description {
+                font-family: 'GilroySemiBold';
+                font-size: 48px;
+                max-width: 1080px;
+                margin: 0 auto;
+                line-height: 59px;
+                margin-top: 35px;
+            }
+        }
+        .col-content {
+            max-width: 1690px;
+            margin: auto;
+
+            .img-col {
+                width: 52.8%;
+                z-index: 0;
+            }
+            .text-col {
+                z-index: 2;
+                width: 47.2%;
+                padding-right: 70px;
+            }
+            
+            p {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    section.services {
+        z-index: 3;
+        padding-top: 300px;
+        padding-bottom: 50px;
+
+        .glitters4-services {
+            top: 15%;
+            left: 23%;
+        }
+
+        .col-content {
+            margin-top: 100px;
+
+            .col {
+                padding: 0 36px;
+            }
+            img {
+                margin: 0 auto 30px;
+            }
+            .title {
+                font-family: 'GilroySemiBold';
+                font-size: 34px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .desc p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    section.testimonials {
+        padding-top: 200px;
+
+        .glitters5-testi {
+            left: 4%;
+            top: 62px;
+            z-index: 1;
+        }
+
+        .nav-btn {
+            max-width: 52px;
+            position: absolute;
+            top: 53%;
+
+            &.button-prev {
+                left: 80px;
+            }
+            &.button-next {
+                right: 80px;
+            }
+        }
+
+        .swiper {
+            padding: 10px;
+        }
+        .testimonials-wrapper {
+            max-width: 1500px;
+            margin: 0 auto;
+        }
+
+        .introductory {
+            margin-bottom: 80px;
+        }
+        .testimonial-item {
+            float: left;
+            width: 50%;
+            max-width: 630px;
+
+            .text {
+                font-size: 18px;
+                line-height: 31px;
+                box-shadow: 0px 2px 22px 0px rgba(101,14,140,0.24);
+                padding: 70px 40px;
+                border-radius: 50px;
+                margin-bottom: 55px;
+            }
+            .author {
+                img {
+                    border-radius: 50%;
+                    margin: 0 auto 16px;
+                }
+                .name {
+                    font-family: 'GilroyBold';
+                    font-size: 25px;
+                }
+                .title {
+                    font-family: 'GilroyUltraLight';
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    section.we-the-best {
+        padding-top: 200px;
+
+        .grey-blob-best {
+            right: 0;
+            z-index: 0;
+            top: -13%;
+        }
+        .glitter {
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -10px;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .introductory {
+            margin-bottom: 100px;
+        }
+
+        .col.form-col {
+            padding-right: 120px;
+        }
+        .application-form {
+            max-width: 720px;
+            width: 100%;
+            margin-left: auto;
+
+            .shadow {
+                z-index: 1;
+            }
+            form {
+                position: relative;
+                z-index: 2;
+            }
+
+            > .inner-wrapper {
+                max-width: 100%;
+            }
+            .form-title {
+                max-width: 570px;
+            }
+            input:not([type=submit]), textarea {
+                box-shadow: 0px 24px 23px 0px rgba(145,23,209,0.08);
+                font-size: 25px;
+                padding: 25px 30px;
+                color: $grey;
+            }
+            input[type=submit] {
+                font-size: 1.875em;
+                max-width: 365px;
+                width: 100%;
+                padding: 27px;
+            }
+        }
+        .icon-with-text {
+            max-width: 530px;
+            margin: 0 auto;
+
+            .row {
+                margin-bottom: 50px;
+            }
+            .icon {
+                margin-bottom: 25px;
+            }
+            .title {
+                margin-bottom: 20px;
+            }
+            .text {
+                p {
+                    font-size: 16px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+
+    section.blog {
+        padding-top: 170px;
+
+        .container {
+            max-width: 1510px;
+        }
+
+        .glitters7-blog {
+            margin: 0 auto;
+            top: 15px;
+            left: -70px;
+            right: 0;
+        }
+        
+        .introductory {
+            margin-bottom: 115px;
+        }
+        .blog-list {
+            padding: 50px;
+
+            .blog-item {
+                width: 33.33%;
+                border-radius: 100px;
+                overflow: hidden;
+                box-shadow: 0px 0px 50px 0px rgba(135,31,142,0.35);
+
+                a {
+                    display: block;
+                    width: 100%;
+                    padding-bottom: 100%;
+                }
+            }
+        }
+
+        .nav-btn {
+            position: absolute;
+            top: 67%;
+
+            &.button-prev {
+                left: 110px;
+            }
+            &.button-next {
+                right: 110px;
+            }
+        }
+    }
+
+    section.footer-cta {
+        padding-top: 50px;
+        
+        .glitter {
+            right: 13%;
+            z-index: 1;
+        }
+
+        .col-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn-white {
+            font-size: 37px;
+            font-family: 'GilroyBold';
+            color: #55a1f5;
+            background-color: #fff;
+            padding: 30px;
+            max-width: 435px;
+            width: 100%;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 40px;
+            display: inline-block;
+        }
+
+        .site-branding {
+            bottom: -240px;
+            left: 50px;
+            
+            a {
+                font-size: 52px;
+            }
+        }
+    }
+}

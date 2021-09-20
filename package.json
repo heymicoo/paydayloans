@@ -1,0 +1,25 @@
+{
+  "name": "paydayloans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "mix --production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "laravel-mix": "^6.0.31",
+    "postcss": "^8.3.6",
+    "sass": "^1.41.1",
+    "sass-loader": "^12.1.0",
+    "swiper": "^7.0.6",
+    "tailwindcss": "^2.2.15",
+    "webpack": "^5.53.0"
+  }
+}

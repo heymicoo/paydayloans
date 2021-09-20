@@ -1,0 +1,127 @@
+
+@font-face {
+    font-family: 'GilroyBold';
+    src: url('../fonts/GilroyBold.eot');
+    src: url('../fonts/GilroyBold.eot') format('embedded-opentype'),
+         url('../fonts/GilroyBold.woff2') format('woff2'),
+         url('../fonts/GilroyBold.woff') format('woff'),
+         url('../fonts/GilroyBold.ttf') format('truetype'),
+         url('../fonts/GilroyBold.svg#GilroyBold') format('svg');
+}
+@font-face {
+    font-family: 'GilroySemiBold';
+    src: url('../fonts/GilroySemiBold.eot');
+    src: url('../fonts/GilroySemiBold.eot') format('embedded-opentype'),
+         url('../fonts/GilroySemiBold.woff2') format('woff2'),
+         url('../fonts/GilroySemiBold.woff') format('woff'),
+         url('../fonts/GilroySemiBold.ttf') format('truetype'),
+         url('../fonts/GilroySemiBold.svg#GilroySemiBold') format('svg');
+}
+@font-face {
+    font-family: 'GilroyUltraLight';
+    src: url('../fonts/GilroyUltraLight.eot');
+    src: url('../fonts/GilroyUltraLight.eot') format('embedded-opentype'),
+         url('../fonts/GilroyUltraLight.woff2') format('woff2'),
+         url('../fonts/GilroyUltraLight.woff') format('woff'),
+         url('../fonts/GilroyUltraLight.ttf') format('truetype'),
+         url('../fonts/GilroyUltraLight.svg#GilroyUltraLight') format('svg');
+}
+
+body {
+    font-family: 'GilroyUltraLight';
+    color: $grey;
+}
+
+p {
+    font-size: 1.438em;
+    line-height: 1.7;
+}
+
+.gilroybold, strong, b {
+    font-family: 'GilroyBold';
+}
+.gilroysemibold {
+    font-family: 'GilroySemiBold';
+}
+
+.white {
+    color: $white;
+}
+.grey {
+    color: $grey;
+}
+
+.container {
+    max-width: 1710px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gradient-bg {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,116,232,1) 0%, rgba(74,189,253,1) 100%);
+}
+.gradient-btn {
+    display: inline-block;
+    padding: 20px 26px;
+    border-radius: 5px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,116,232,1) 0%, rgba(74,189,253,1) 100%);
+}
+
+.application-form {
+
+    > .inner-wrapper {
+        max-width: 570px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .form-title {
+        max-width: 450px;
+        margin: 0 auto;
+        margin-bottom: 110px;
+    }
+
+    form {
+        input, textarea {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+input[type=text], input[type=email], textarea {
+    padding: 20px 30px;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'GilroySemiBold';
+    margin-bottom: 28px;
+}
+
+input[type=submit] {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'GilroySemiBold';
+    display: block;
+    max-width: 287px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 22px;
+    border-radius: 8px;
+    margin-top: 75px;
+}
+.glitter {
+    position: absolute;
+    pointer-events: none;
+}
+
+section {
+    position: relative;
+}
+
+.flip-horizontal {
+    transform: scaleX(-1);
+}
