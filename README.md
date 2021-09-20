@@ -1,7 +1,7 @@
-### Payday Loans Online
+## Payday Loans Online
 From Upwork
 
-## Usage
+### Usage
 
 ```sh
 npm install
