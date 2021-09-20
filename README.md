@@ -1,6 +1,12 @@
-# paydayloans
+### Payday Loans Online
 From Upwork
 
-npm run dev__
-npm run watch__
+## Usage
+
+```sh
+npm install
+
+npm run dev
+npm run watch
 npm run prod
+```
