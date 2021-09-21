@@ -612,6 +612,12 @@
             text-align: center;
             margin-top: 40px;
             display: inline-block;
+            @include smooth;
+
+            &:hover {
+                background-color: #55a1f5;
+                color: #fff;
+            }
 
             @include lg {
                 font-size: 25px;

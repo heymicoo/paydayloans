@@ -62,16 +62,28 @@ p {
     margin-right: auto;
 }
 .gradient-bg {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,116,232,1) 0%, rgba(74,189,253,1) 100%);
+    background-image: linear-gradient(to right, #6974e8, #4cb9fc, #4cb9fc, #6974e8);
+    background-size: 300% 100%;
+    @include smooth;
+
+    &:hover {
+        background-position: 100% 0;
+    }
 }
 .gradient-btn {
     display: inline-block;
     padding: 20px 26px;
     border-radius: 5px;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,116,232,1) 0%, rgba(74,189,253,1) 100%);
+    // background: rgb(2,0,36);
+    // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,116,232,1) 0%, rgba(74,189,253,1) 100%);
+    background-image: linear-gradient(to right, #6974e8, #4cb9fc, #4cb9fc, #6974e8);
+    background-size: 300% 100%;
     white-space: nowrap;
+    @include smooth;
+
+    &:hover {
+        background-position: 100% 0;
+    }
 }
 
 .application-form {
