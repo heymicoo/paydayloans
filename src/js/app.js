@@ -10,11 +10,11 @@ Swiper.use([Navigation]);
 // init Swiper
 const swiperTesti = new Swiper('.swiper.testimonials', {
   loop: true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   autoplay:  {
     delay: 0,
   },
-  spaceBetween: 230,
+  spaceBetween: 80,
 
   // Navigation arrows
   navigation: {
@@ -22,11 +22,20 @@ const swiperTesti = new Swiper('.swiper.testimonials', {
     prevEl: '.testimonials .button-prev',
   },
 
+  breakpoints: {
+    1680: {
+      spaceBetween: 230,
+    },
+    1025: {
+      slidesPerView: 2,
+    }
+  }
+
 });
 
 const swiperBlog = new Swiper('.swiper.blog-list', {
   autoplay: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 100,
 
   // Navigation arrows
@@ -35,4 +44,21 @@ const swiperBlog = new Swiper('.swiper.blog-list', {
     prevEl: '.blog .button-prev',
   },
 
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+    },
+    1680: {
+      slidesPerView: 3,
+    },
+  }
+
 });
+
+(function($){
+
+  $('#burger-menu').sidr({
+      side: 'right',
+  });
+
+})(jQuery);

@@ -4,8 +4,9 @@
 get_header(); ?>
 
 <div class="home">
-    <section class="hero min-h-screen bg-black relative">
-        <img class="absolute pointer-events-none bottom-0" src="<?php echo get_template_directory_uri() . '/dist/img/here-blob-white.png' ?>" alt="blob" class="blob-white">
+    <section id="hero" class="hero min-h-screen bg-black relative">
+        <img class="mobile hidden absolute pointer-events-none bottom-0 blob" src="<?php echo get_template_directory_uri() . '/dist/img/hero-blob-white-mobile.png' ?>" alt="blob">
+        <img class="absolute pointer-events-none bottom-0 blob desktop" src="<?php echo get_template_directory_uri() . '/dist/img/here-blob-white.png' ?>" alt="blob">
         <img class="glitters1 absolute pointer-events-none top-0" src="<?php echo get_template_directory_uri() . '/dist/img/glitters1-hero.png' ?>" alt="blob" class="glitters">
         <div class="container flex h-full z-10 relative">
             <div class="hero-text w-1/2 flex white flex-col justify-center">
@@ -35,9 +36,9 @@ get_header(); ?>
             </div>
             <img src="<?php echo get_template_directory_uri() . '/dist/img/glitters2-bot-hero.png' ?>" alt="glitters" class="glitters2 absolute pointer-events-none">
         </div>
-        <a id="scroll-down" href="#"><img src="<?php echo get_template_directory_uri() . '/dist/img/scroll-down-icon.png' ?>" alt="icon"></a>
+        <a id="scroll-down" href="#about_us"><img src="<?php echo get_template_directory_uri() . '/dist/img/scroll-down-icon.png' ?>" alt="icon"></a>
     </section>
-    <section class="about-us relative">
+    <section id="about_us" class="about-us relative">
         <img src="<?php echo get_template_directory_uri() . '/dist/img/grey-blob.png' ?>" alt="blob" class="absolute grey-blob-aboutus">
         <div class="container relative">
             <img src="<?php echo get_template_directory_uri() . '/dist/img/glitters3-about-us.png' ?>" alt="glitters" class="glitter glitters3">
@@ -61,7 +62,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <section class="services relative">
+    <section id="services" class="services relative overflow-hidden">
         <img src="<?php echo get_template_directory_uri() . '/dist/img/glitters4-services.png' ?>" alt="glitter" class="glitter glitters4-services">
         <div class="container">
             <div class="introductory text-center grey">
@@ -108,7 +109,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <section class="testimonials">
+    <section id="testimonials" class="testimonials overflow-hidden">
         <img src="<?php echo get_template_directory_uri() . '/dist/img/glitters5-testi.png' ?>" alt="glitter" class="glitter glitters5-testi">
         <div class="container">
             <div class="introductory text-center grey">
@@ -165,7 +166,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <section class="we-the-best">
+    <section id="we_the_best" class="we-the-best">
         <img src="<?php echo get_template_directory_uri() . '/dist/img/grey-blob.png' ?>" alt="blob" class="flip-horizontal absolute grey-blob-best">
         <img src="<?php echo get_template_directory_uri() . '/dist/img/glitters6-best.png' ?>" alt="glitter" class="glitter glitters6-best">
         <div class="container">
@@ -179,7 +180,6 @@ get_header(); ?>
                         <div class="inner-wrapper text-center">
                             <h2 class="form-title grey">Payday Loan Online Application</h2>
                             <div class="form-wrapper">
-                                <img src="<?php echo get_template_directory_uri() . '/dist/img/shadow-ellipse.png' ?>" alt="shadow" class="shadow absolute">
                                 <form action="/">
                                     <input type="text" placeholder="Name" name="name">
                                     <input type="email" placeholder="Email address" name="email">
@@ -234,7 +234,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <section class="blog">
+    <section id="blog" class="blog">
         <img src="<?php echo get_template_directory_uri() . '/dist/img/glitters7-blog.png' ?>" alt="glitter" class="glitter glitters7-blog">
         <div class="container">
             <div class="introductory text-center grey">
@@ -263,7 +263,7 @@ get_header(); ?>
             <div class="nav-btn button-next"><img src="<?php echo get_template_directory_uri() . '/dist/img/arrow-gradient.png' ?>" alt="icon"></div>
         </div>
     </section>
-    <section class="footer-cta relative">
+    <section id="footer_cta" class="footer-cta relative">
         <div class="blob-svg absolute bottom-0">
             <svg class="w-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="950.39" viewBox="0 0 1920 950.39">
             <defs>
@@ -290,10 +290,10 @@ get_header(); ?>
         <div class="container relative">
             <img src="<?php echo get_template_directory_uri() . '/dist/img/glitters8-footer.png' ?>" alt="glitter" class="glitter glitters8-footer">
             <div class="col-content flex items-center">
-                <div class="col w-1/2">
+                <div class="col w-1/2 img-col">
                     <img src="<?php echo get_template_directory_uri() . '/dist/img/woman-shocked.png' ?>" alt="img">
                 </div>
-                <div class="col w-1/2 white text-center relative">
+                <div class="col w-1/2 white text-center relative text-col">
                     <h1 class="heading">Want to get Credit?</h1>
                     <div class="btn-wrapper">
                         <a href="#" class="btn-white">SEND MESSAGE</a>

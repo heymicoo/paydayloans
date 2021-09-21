@@ -2,11 +2,21 @@ h1 {
     font-family: 'GilroyBold';
     font-size: 4.625em;
     line-height: 88px;
+
+    @include lg {
+        font-size: 4em;
+        line-height: 70px;
+    }
 }
 h2 {
     font-family: 'GilroyBold';
     font-size: 3.938em;
     line-height: 72px;
+
+    @include lg {
+        font-size: 3em;
+        line-height: 60px;
+    }
 }
 h3 {
     font-family: 'GilroyBold';
