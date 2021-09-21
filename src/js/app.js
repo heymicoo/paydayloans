@@ -24,6 +24,7 @@ const swiperTesti = new Swiper('.swiper.testimonials', {
 
   breakpoints: {
     1680: {
+      slidesPerView: 2,
       spaceBetween: 230,
     },
     1025: {
