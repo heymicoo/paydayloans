@@ -60,6 +60,10 @@ p {
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+
+    @include xl {
+        max-width: 1500px;
+    }
 }
 .gradient-bg {
     background-image: linear-gradient(to right, #6974e8, #4cb9fc, #4cb9fc, #6974e8);

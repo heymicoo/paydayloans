@@ -1,6 +1,10 @@
 header.site-header {
     .container {
         max-width: 1850px;
+
+        @include xl {
+            max-width: 1500px;
+        }
     }
     .site-branding {
         padding-left: 38px;
